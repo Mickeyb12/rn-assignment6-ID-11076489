@@ -17,8 +17,6 @@ export const CartProvider = ({ children }) => {
         console.error('Failed to load cart from storage', error);
       }
     };
-
-    loadCart();
   }, []);
 
   const saveCart = async (cart) => {
